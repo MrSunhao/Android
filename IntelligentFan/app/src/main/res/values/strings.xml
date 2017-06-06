@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">智能风扇</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="login_title">登录</string>
+    <string name="username_title">账&#160;&#160;&#160;&#160;号</string>
+    <string name="username_hint">请输入注册时的手机号</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="password_title">密&#160;&#160;&#160;&#160;码</string>
+    <string name="submit">登录</string>
+    <string name="reset">重置</string>
+    <string name="am_close">取消</string>
+    <string name="rememberMe">七天之内免登录</string>
+    <string name="forgetpwd">忘记密码？</string>
+
+    <string name="winds_menu_text">风速</string>
+    <string name="appointment_menu_text">预约</string>
+    <string name="timer_menu_text">定时</string>
+    <string name="setsec_text">设定秒数：</string>
+    <string name="count_menu_text">统计</string>
+    <string name="setting_menu_text">设置</string>
+
+    <string name="winds_title_text">当前风速</string>
+    <string name="wind_speed_text">0</string>
+    <string name="wind_unit_text">n/min</string>
+    <string name="am_hint">00:00</string>
+    <string name="ok">确定</string>
+
+    <string name="resetpwd_text">修改密码</string>
+    <string name="help_text">帮助文档</string>
+    <string name="exit_text">退出登录</string>
+
+    <string name="old_pwd_text">旧密码</string>
+    <string name="new_pwd_text">新密码</string>
+    <string name="confirm_pwd_text">确认密码</string>
+
+    <string name="old_pwd_hint">输入旧密码</string>
+    <string name="new_pwd_hint">输入新密码</string>
+    <string name="confirm_pwd_hint">重复密码</string>
+    <string name="help_title">欢迎阅读帮助文档</string>
+
+    <string name="help_content">
+        一、ARM端按钮功能说明\n
+        1.turnon&#160;&#160;&#160;开启风扇。\n
+        2.turnoff&#160;&#160;&#160;关闭风扇。\n
+        3.add &#160;&#160;&#160;加大风速。\n
+        4.dec&#160;&#160;&#160;减小风速。\n
+        5.ok&#160;&#160;&#160;确定选项。\n
+        6.close&#160;&#160;&#160;关闭选项。\n
+        二、功能提示\n
+        1.风速最大值提示。\n
+        2.风速最小值提示。\n
+        3.定时开启提示。\n
+        4.定时关闭提示。\n
+        三、操作指南\n
+        1.如果启动开关响应慢,这可能是网络的原因,请耐心等待。\n
+        2.为了您更好的体验,请保持您的手机网络通畅。\n
+        3.为了您的安全,请妥善保管密码。\n
+        4.如果重复点击不起作用,请放慢您的点击速度,或者重启客服端。\n
+
+    </string>
+</resources>

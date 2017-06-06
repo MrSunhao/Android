@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.company.sun.intelligentfan.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top_bar_bg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="UselessParent">
+
+        <ImageButton
+            android:id="@+id/home_menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@mipmap/index"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:contentDescription=""
+            tools:ignore="ContentDescription" />
+        <Switch
+            android:id="@+id/switch_fan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            tools:ignore="RtlHardcoded"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#E5E5E5"
+            tools:ignore="PxUsage" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/footer_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/winds_menu"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_winds"
+            android:text="@string/winds_menu_text" />
+
+        <RadioButton
+            android:id="@+id/appointment_menu"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_appiontment"
+            android:text="@string/appointment_menu_text" />
+
+        <RadioButton
+            android:id="@+id/timer_menu"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_timer"
+            android:text="@string/timer_menu_text" />
+
+        <RadioButton
+            android:id="@+id/count_menu"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_count"
+            android:text="@string/count_menu_text" />
+
+        <RadioButton
+            android:id="@+id/setting_menu"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_setting"
+            android:text="@string/setting_menu_text"
+            />
+    </RadioGroup>
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/footer_bar"
+        android:background="#E5E5E5"
+        tools:ignore="PxUsage" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        android:layout_below="@id/top_bar"
+        />
+
+</RelativeLayout>

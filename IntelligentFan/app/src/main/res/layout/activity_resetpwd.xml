@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/setting_text"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="?android:attr/homeAsUpIndicator"
+            android:layout_weight="0.13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/old_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/old_pwd_hint"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/new_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/new_pwd_hint"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <EditText
+            android:id="@+id/confirm_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/confirm_pwd_hint"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/resetpwd_ok"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:layout_marginTop="15dp"
+            />
+    </LinearLayout>
+</LinearLayout>
